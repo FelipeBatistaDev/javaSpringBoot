@@ -29,11 +29,14 @@ public class ExceptionHandlerHelper {
         return ResponseEntity.internalServerError().build();
     }
 
-    private record DadosDaException(String field, String mensagem){
+    @ExceptionHandler(ValidacaoException.class)
+    public ResponseEntity handle500(ValidacaoException ex){
+        return ResponseEntity.badRequest().body(ex.getMessage());
+    }
 
+    private record DadosDaException(String field, String mensagem){
         public DadosDaException(FieldError error){
             this(error.getField(), error.getDefaultMessage());
         }
-
     }
 }

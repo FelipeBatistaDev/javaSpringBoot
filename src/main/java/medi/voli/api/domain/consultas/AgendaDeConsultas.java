@@ -4,12 +4,15 @@ import medi.voli.api.domain.consultas.dto.DadosAtualizarConsulta;
 import medi.voli.api.domain.consultas.dto.DadosCadastroConsulta;
 import medi.voli.api.domain.consultas.repository.ConsultaEntity;
 import medi.voli.api.domain.consultas.repository.ConsultaRepository;
+import medi.voli.api.domain.consultas.validacoes.ValidadorAgendamentoDeConsulta;
 import medi.voli.api.domain.medicos.repository.MedicoEntity;
 import medi.voli.api.domain.medicos.repository.MedicoRepository;
 import medi.voli.api.domain.pacientes.repository.PacienteRepository;
 import medi.voli.api.infra.exception.ValidacaoException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class AgendaDeConsultas {
@@ -22,6 +25,9 @@ public class AgendaDeConsultas {
     @Autowired
     private PacienteRepository pacienteRepository;
 
+    @Autowired
+    private List<ValidadorAgendamentoDeConsulta> validadores;
+
 
     public ConsultaEntity agendar(DadosCadastroConsulta dados){
 
@@ -33,10 +39,14 @@ public class AgendaDeConsultas {
             throw new ValidacaoException("Id de médico que não existe");
         }
 
+        validadores.forEach(v -> v.validar(dados));
 
         var paciente =  pacienteRepository.findById(dados.idPaciente()).get();
 
         var medico =  escolherMedico(dados);
+        if(medico != null){
+            throw new ValidacaoException("Não há medico disponível para essa data");
+        }
 
         var consulta = new ConsultaEntity(null, medico, paciente, true, dados.data());
 
@@ -69,7 +79,6 @@ public class AgendaDeConsultas {
         }
 
         return medicoRepository.escolherMedicoAleatorioLivreNaData(dados.especialidade(), dados.data());
-
     }
 
     public void cancelarConsulta(Long id) {

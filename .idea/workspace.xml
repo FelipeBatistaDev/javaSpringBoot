@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f4f1da4-ba4e-493b-9808-43a653da7612" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/controllers/ConsultaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/AgendaDeConsultas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/dto/DadosAtualizarConsulta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/dto/DadosCadastroConsulta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/dto/DetalhesConsulta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/repository/ConsultaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/repository/ConsultaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/exception/ValidacaoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V7__CREATE_TABLE_CONSULTAS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V8__ALTER_TABLE_CONSULTA_STATUS.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoMedicoInativo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoMedicoMesmoDia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoPacienteInativo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoPacienteMesmoDia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidadorAgendamentoDeConsulta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidadorHorarioAntecedencia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidadorHorarioFuncionamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/AgendaDeConsultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/AgendaDeConsultas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/repository/ConsultaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/repository/ConsultaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/medicos/repository/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/medicos/repository/MedicoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/pacientes/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/pacientes/repository/PacienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/exception/ExceptionHandlerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/exception/ExceptionHandlerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/AgendaDeConsultas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/AgendaDeConsultas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/repository/ConsultaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/repository/ConsultaRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/medicos/repository/MedicoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/medicos/repository/MedicoRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -108,5 +110,16 @@
       <updated>1752359490348</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidadorHorarioFuncionamento.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
