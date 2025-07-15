@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f4f1da4-ba4e-493b-9808-43a653da7612" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoMedicoInativo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoMedicoMesmoDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoPacienteInativo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidacaoPacienteMesmoDia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidadorAgendamentoDeConsulta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidadorHorarioAntecedencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/validacoes/ValidadorHorarioFuncionamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/AgendaDeConsultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/AgendaDeConsultas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/repository/ConsultaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/consultas/repository/ConsultaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/medicos/repository/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/medicos/repository/MedicoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/pacientes/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/domain/pacientes/repository/PacienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/exception/ExceptionHandlerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/exception/ExceptionHandlerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/controllers/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/controllers/ConsultaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/controllers/MedicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/controllers/MedicoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/controllers/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/controllers/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/medi/voli/api/infra/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/controllers/ConsultaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/controllers/ConsultaController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/AgendaDeConsultas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/AgendaDeConsultas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/repository/ConsultaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/consultas/repository/ConsultaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/medicos/repository/MedicoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/domain/medicos/repository/MedicoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/medi/voli/api/infra/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/medi/voli/api/infra/security/SecurityConfiguration.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +26,8 @@
       <list>
         <option value="Enum" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
